@@ -3,10 +3,7 @@ def palindromo(numero):
         return False
     else:
         valor = str(numero)
-        if valor == ''.join(reversed(valor)):
-            return True
-        else:
-            return False
+        return valor == ''.join(reversed(valor))
 
 assert(palindromo(121) == True)
 assert(palindromo(-121) == False)
