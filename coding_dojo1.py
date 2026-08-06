@@ -3,7 +3,7 @@ def palindromo(numero):
         return False
     else:
         valor = str(numero)
-        if valor == valor[::-1]:
+        if valor == ''.join(reversed(valor)):
             return True
         else:
             return False
